@@ -8,7 +8,7 @@ Singleton {
 
     property string shellName: "Noctalia"
     property string settingsDir: Quickshell.env("NOCTALIA_SETTINGS_DIR") || (Quickshell.env("XDG_CONFIG_HOME") || Quickshell.env("HOME") + "/.config") + "/" + shellName + "/"
-    property string settingsFile: Quickshell.env("NOCTALIA_SETTINGS_FILE") || ("Settings.json")
+    property string settingsFile: "../Settings.json"
     property string themeFile: "./Theme.json"
     property var settings: settingAdapter
 
@@ -44,7 +44,7 @@ Singleton {
             property bool showTaskbar: true
             property bool showMediaInBar: false
             property bool randomWallpaper: false
-            property bool useWallpaperTheme: false
+            property bool useWallpaperTheme: true
             property int wallpaperInterval: 300
             property string wallpaperResize: "crop"
             property int transitionFps: 90
