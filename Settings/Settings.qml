@@ -44,7 +44,7 @@ Singleton {
             property bool showTaskbar: true
             property bool showMediaInBar: false
             property bool randomWallpaper: false
-            property bool useWallpaperTheme: true
+            property bool useWallpaperTheme: false
             property int wallpaperInterval: 300
             property string wallpaperResize: "crop"
             property int transitionFps: 90
